@@ -1,341 +1,174 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>ROTONDIWA CASH LOANS — Apply Online</title>
-<meta name="description" content="Apply online for fast cash loans. Upload your ID, 3-month bank statement and proof of residence." />
-<link rel="icon" href="data:;base64,iVBORw0KGgo=">
-<style>
-  /* ---------- Simple modern theme (mobile-first) ---------- */
-  :root{
-    --blue:#0B64A0;
-    --green:#18A558;
-    --dark:#0A2B3A;
-    --muted:#6b7280;
-    --bg:#F7FAFC;
-    --max-width:1100px;
-    --radius:12px;
-  }
-  *{box-sizing:border-box}
-  body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:var(--dark); background:var(--bg); -webkit-font-smoothing:antialiased}
-  .wrap{max-width:var(--max-width);margin:24px auto;padding:20px;}
-  header{display:flex;align-items:center;justify-content:space-between;gap:12px}
-  .brand{display:flex;gap:12px;align-items:center}
-  .logo{width:56px;height:56px;background:linear-gradient(135deg,var(--blue),var(--green));border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px}
-  .site-title{line-height:1}
-  .site-title h1{margin:0;font-size:18px}
-  .site-title p{margin:0;color:var(--muted);font-size:13px}
-  nav a{margin-left:12px;text-decoration:none;color:var(--dark);font-weight:600}
-  .hero{margin-top:18px;background:white;padding:24px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(10,43,58,0.06)}
-  .hero h2{margin:0 0 8px 0;font-size:22px}
-  .hero p{margin:0 0 16px 0;color:var(--muted)}
-  .btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700}
-  .btn-primary{background:var(--blue);color:white}
-  .btn-ghost{background:transparent;border:2px solid var(--blue);color:var(--blue)}
-  .strip{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
-  .card{background:white;padding:16px;border-radius:10px;flex:1;min-width:180px;box-shadow:0 4px 12px rgba(10,43,58,0.04)}
-  .grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:18px}
-  @media(min-width:900px){.grid{grid-template-columns:1fr 420px}}
-  /* apply form styles */
-  form{background:white;padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(10,43,58,0.04)}
-  label{display:block;font-weight:600;margin-bottom:6px;font-size:14px}
-  input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="date"], select, textarea{
-    width:100%;padding:10px;border:1px solid #e6edf3;border-radius:8px;font-size:14px;margin-bottom:12px
-  }
-  textarea{min-height:100px;resize:vertical}
-  .file-row{display:flex;gap:8px;flex-direction:column;margin-bottom:12px}
-  .muted{color:var(--muted);font-size:13px}
-  footer{margin-top:28px;padding:14px 0;color:var(--muted);text-align:center}
-  .contact-box{background:linear-gradient(180deg,#fff,#f6fbff);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(10,43,58,0.03)}
-  .small{font-size:13px}
-  .error{color:#b91c1c;font-weight:700}
-  .success{color:#065f46;font-weight:700}
-  .flex{display:flex;gap:10px;align-items:center}
-  .hidden{display:none}
-  /* small helpers */
-  .mb8{margin-bottom:8px}
-  .mb16{margin-bottom:16px}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ROTONDIWA CASH LOANS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #005baa;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+      color: #005baa;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      font-weight: bold;
+      margin-top: 12px;
+    }
+    input, select, textarea, button {
+      margin-top: 4px;
+      padding: 10px;
+      font-size: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    textarea {
+      resize: vertical;
+    }
+    .file-row {
+      margin-top: 12px;
+    }
+    .btn {
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .btn-primary {
+      background: #005baa;
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #004080;
+    }
+    .btn-ghost {
+      background: #eee;
+      color: #333;
+    }
+    .btn-ghost:hover {
+      background: #ddd;
+    }
+    .muted {
+      font-size: 13px;
+      color: #777;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f1f1f1;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-  <div class="wrap" id="top">
-    <header>
-      <div class="brand">
-        <div class="logo" aria-hidden="true">RC</div>
-        <div class="site-title">
-          <h1>ROTONDIWA CASH LOANS</h1>
-          <p>Fast — Confidential — Reliable</p>
-        </div>
+  <header>
+    <h1>ROTONDIWA CASH LOANS</h1>
+    <p>Fast • Reliable • Trusted</p>
+  </header>
+
+  <main>
+    <h2>Loan Application Form</h2>
+    <p>Please fill in your details below to apply for a loan. Fields marked with * are required.</p>
+
+    <form name="loanForm" method="POST" action="/thankyou.html" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="loanForm" />
+      <p class="hidden"><label>Don’t fill this out if you're human: <input name="bot-field" /></label></p>
+
+      <label for="fullName">Full name *</label>
+      <input id="fullName" name="fullName" type="text" required />
+
+      <label for="idNumber">ID number *</label>
+      <input id="idNumber" name="idNumber" type="text" required />
+
+      <label for="dob">Date of birth</label>
+      <input id="dob" name="dob" type="date" />
+
+      <label for="phone">Phone number *</label>
+      <input id="phone" name="phone" type="tel" required placeholder="+27XXXXXXXXX" />
+
+      <label for="email">Email *</label>
+      <input id="email" name="email" type="email" required />
+
+      <label for="address">Residential address *</label>
+      <input id="address" name="address" type="text" required />
+
+      <label for="amount">Loan amount requested (ZAR) *</label>
+      <input id="amount" name="amount" type="number" min="100" required />
+
+      <label for="employment">Employment status *</label>
+      <select id="employment" name="employment" required>
+        <option value="">Choose...</option>
+        <option>Employed</option>
+        <option>Self-employed</option>
+        <option>Informal trader</option>
+        <option>Unemployed</option>
+        <option>Student</option>
+      </select>
+
+      <label for="employer">Employer / Monthly income</label>
+      <input id="employer" name="employer" type="text" />
+
+      <label for="message">Additional info</label>
+      <textarea id="message" name="message" placeholder="Any other helpful info..."></textarea>
+
+      <!-- File uploads -->
+      <div class="file-row">
+        <label for="idUpload">Upload ID (jpg/png/pdf) * <span class="muted">Max 8 MB</span></label>
+        <input id="idUpload" name="idUpload" type="file" accept=".png,.jpg,.jpeg,.pdf" required />
       </div>
-      <nav aria-label="Main navigation">
-        <a href="#top">Home</a>
-        <a href="#services">Services</a>
-        <a href="#apply">Apply</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
 
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <h2 id="hero-title">Fast. Confidential. Reliable Cash Loans.</h2>
-        <p>Apply online in minutes — upload your ID, 3-month bank statement, and proof of residence. We review applications within 24 hours.</p>
-        <div style="display:flex;gap:8px;flex-wrap:wrap">
-          <a class="btn btn-primary" href="#apply">Apply Now</a>
-          <a class="btn btn-ghost" href="#contact">Contact Us</a>
-        </div>
-
-        <div class="strip" aria-hidden="true" style="margin-top:16px">
-          <div class="card"><strong>Quick Approval</strong><div class="muted">Most applicants hear back within 24 hours.</div></div>
-          <div class="card"><strong>Secure & Confidential</strong><div class="muted">Documents stored safely.</div></div>
-          <div class="card"><strong>Flexible Repayments</strong><div class="muted">Plans that suit your needs.</div></div>
-        </div>
-      </section>
-
-      <div class="grid">
-        <section aria-labelledby="services" style="padding-right:6px">
-          <h3 id="services" style="margin-top:18px">Our Services</h3>
-          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:12px">
-            <div class="card"><strong>Personal Loans</strong><div class="muted">Short-term loans for everyday needs.</div></div>
-            <div class="card"><strong>Emergency Loans</strong><div class="muted">Quick disbursal for urgent situations.</div></div>
-            <div class="card"><strong>Small Business Microloans</strong><div class="muted">Support for informal traders.</div></div>
-          </div>
-
-          <h4 style="margin-top:18px">About ROTONDIWA CASH LOANS</h4>
-          <p class="muted">ROTONDIWA CASH LOANS is a trusted local lender providing fast, confidential cash loans to individuals and small businesses. We pride ourselves on transparent terms and quick decisions.</p>
-
-          <h4 style="margin-top:12px">FAQ</h4>
-          <div class="card" style="margin-top:8px">
-            <p class="small"><strong>What do I need to apply?</strong><br>ID copy, 3 months bank statement, proof of residence.</p>
-            <p class="small"><strong>How long for approval?</strong><br>We aim to respond within 24 hours.</p>
-          </div>
-        </section>
-
-        <!-- Right column: Form + Contact -->
-        <aside>
-          <section id="apply" aria-labelledby="apply-title" style="margin-bottom:14px">
-            <h3 id="apply-title">Apply Online — ROTONDIWA CASH LOANS</h3>
-
-            <!-- FOR HOSTING: Netlify Forms + Formspree fallback
-                 If you host on Netlify, Netlify will capture the form when data-netlify="true".
-                 If you don't use Netlify, enter your Formspree endpoint in the JS variable FORMSPREE_ENDPOINT. -->
-            <form id="loanForm" name="loanForm" method="POST" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field">
-              <!-- Netlify needs a hidden input with form-name -->
-              <input type="hidden" name="form-name" value="loanForm" />
-              <p class="hidden"><label>Don’t fill this out if you're human: <input name="bot-field" /></label></p>
-
-              <label for="fullName">Full name *</label>
-              <input id="fullName" name="fullName" type="text" required />
-
-              <label for="idNumber">ID number *</label>
-              <input id="idNumber" name="idNumber" type="text" required />
-
-              <label for="dob">Date of birth</label>
-              <input id="dob" name="dob" type="date" />
-
-              <label for="phone">Phone number *</label>
-              <input id="phone" name="phone" type="tel" required placeholder="+27XXXXXXXXX" />
-
-              <label for="email">Email *</label>
-              <input id="email" name="email" type="email" required />
-
-              <label for="address">Residential address *</label>
-              <input id="address" name="address" type="text" required />
-
-              <label for="amount">Loan amount requested (ZAR) *</label>
-              <input id="amount" name="amount" type="number" min="100" required />
-
-              <label for="employment">Employment status *</label>
-              <select id="employment" name="employment" required>
-                <option value="">Choose...</option>
-                <option>Employed</option>
-                <option>Self-employed</option>
-                <option>Informal trader</option>
-                <option>Unemployed</option>
-                <option>Student</option>
-              </select>
-
-              <label for="employer">Employer / Monthly income</label>
-              <input id="employer" name="employer" type="text" />
-
-              <label for="message">Additional info</label>
-              <textarea id="message" name="message" placeholder="Any other helpful info..."></textarea>
-
-              <!-- File uploads -->
-              <div class="file-row">
-                <label for="idUpload">Upload ID (jpg/png/pdf) * <span class="muted">Max 8 MB</span></label>
-                <input id="idUpload" name="idUpload" type="file" accept=".png,.jpg,.jpeg,.pdf" required />
-              </div>
-
-              <div class="file-row">
-                <label for="bankUpload">Upload 3 months bank statement (pdf/jpg/png) * <span class="muted">Max 15 MB each</span></label>
-                <input id="bankUpload" name="bankUpload" type="file" accept=".pdf,.png,.jpg,.jpeg" multiple required />
-              </div>
-
-              <div class="file-row">
-                <label for="proofUpload">Upload proof of residence (jpg/png/pdf) * <span class="muted">Max 8 MB</span></label>
-                <input id="proofUpload" name="proofUpload" type="file" accept=".png,.jpg,.jpeg,.pdf" required />
-              </div>
-
-              <div class="mb16">
-                <small class="muted">By submitting you consent to ROTONDIWA CASH LOANS processing your information for loan assessment. Read our privacy policy for details.</small>
-              </div>
-
-              <div id="formFeedback" class="mb8"></div>
-
-              <div style="display:flex;gap:8px">
-                <button id="submitBtn" class="btn btn-primary" type="submit">Submit Application</button>
-                <button id="clearBtn" type="button" class="btn btn-ghost">Clear</button>
-              </div>
-            </form>
-          </section>
-
-          <section id="contact" aria-labelledby="contact-title" class="contact-box">
-            <h4 id="contact-title">Contact</h4>
-            <p class="small">Phone: <a href="tel:+27REPLACE_ME_PHONE">+27 72 670 1542 / 067 374 5053</a><br>
-            WhatsApp: <a href="https://wa.me/27REPLACE_ME_PHONE_PLAIN">072 670 1542</a><br>
-            Email: <a href="mailto:REPLACE_ME_EMAIL">Rotondiwafinances@gmail.com</a></p>
-
-            <p class="muted small">Office (optional): Street, City, Province</p>
-          </section>
-        </aside>
+      <div class="file-row">
+        <label for="bankUpload">Upload 3 months bank statement (pdf/jpg/png) * <span class="muted">Max 15 MB each</span></label>
+        <input id="bankUpload" name="bankUpload" type="file" accept=".pdf,.png,.jpg,.jpeg" multiple required />
       </div>
-    </main>
 
-    <footer>
-      © <span id="year"></span> ROTONDIWA CASH LOANS — All rights reserved. <br>
-      <a href="#" style="color:inherit;text-decoration:underline">Terms & Privacy</a>
-    </footer>
-  </div>
+      <div class="file-row">
+        <label for="proofUpload">Upload proof of residence (jpg/png/pdf) * <span class="muted">Max 8 MB</span></label>
+        <input id="proofUpload" name="proofUpload" type="file" accept=".png,.jpg,.jpeg,.pdf" required />
+      </div>
 
-<script>
-/*
-  Client-side form handling & validation.
+      <div class="mb16">
+        <small class="muted">By submitting you consent to ROTONDIWA CASH LOANS processing your information for loan assessment. Read our privacy policy for details.</small>
+      </div>
 
-  HOW THIS WORKS:
-  - Netlify: When hosted on Netlify, Netlify Forms will capture submissions (including file uploads).
-             Netlify recognizes forms with data-netlify="true" and the hidden "form-name" input.
+      <div style="display:flex;gap:8px;margin-top:16px">
+        <button class="btn btn-primary" type="submit">Submit Application</button>
+        <button type="reset" class="btn btn-ghost">Clear</button>
+      </div>
+    </form>
+  </main>
 
-  - Formspree fallback: If you're NOT using Netlify, set FORMSPREE_ENDPOINT below to your Formspree endpoint
-    (e.g. https://formspree.io/f/yourid). The script will POST FormData to that endpoint.
-
-  REPLACE:
-   - Replace REPLACE_ME_EMAIL and REPLACE_ME_PHONE in the contact links above.
-   - If using Formspree, set FORMSPREE_ENDPOINT to your endpoint; otherwise leave it empty and use Netlify.
-
-  FILE LIMITS (enforced client-side):
-   - ID: max 8 MB
-   - Proof of residence: max 8 MB
-   - Bank statements: max 15 MB per file (multiple allowed)
-*/
-const FORMSPREE_ENDPOINT = ""; // <-- OPTIONAL: paste your Formspree endpoint here if not using Netlify
-const submitBtn = document.getElementById('submitBtn');
-const clearBtn = document.getElementById('clearBtn');
-const form = document.getElementById('loanForm');
-const feedback = document.getElementById('formFeedback');
-
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// file size/type rules
-const MAX_ID_MB = 8;
-const MAX_PROOF_MB = 8;
-const MAX_BANK_MB = 15;
-const ALLOWED_TYPES = ['image/png','image/jpeg','application/pdf'];
-
-function bytesToMB(bytes){ return bytes/1024/1024; }
-
-function validateFiles(){
-  const idFile = document.getElementById('idUpload').files[0];
-  const proofFile = document.getElementById('proofUpload').files[0];
-  const bankFiles = document.getElementById('bankUpload').files;
-
-  if(!idFile || !proofFile || bankFiles.length === 0){
-    return "Please upload all required documents (ID, bank statements, proof of residence).";
-  }
-  if(!ALLOWED_TYPES.includes(idFile.type)) return "ID must be JPG/PNG/PDF.";
-  if(bytesToMB(idFile.size) > MAX_ID_MB) return "ID file exceeds 8 MB.";
-
-  if(!ALLOWED_TYPES.includes(proofFile.type)) return "Proof of residence must be JPG/PNG/PDF.";
-  if(bytesToMB(proofFile.size) > MAX_PROOF_MB) return "Proof of residence exceeds 8 MB.";
-
-  for(let i=0;i<bankFiles.length;i++){
-    const f = bankFiles[i];
-    if(!ALLOWED_TYPES.includes(f.type)) return "Bank statements must be JPG/PNG/PDF.";
-    if(bytesToMB(f.size) > MAX_BANK_MB) return "One of the bank statement files exceeds 15 MB.";
-  }
-  return null;
-}
-
-form.addEventListener('submit', async function(e){
-  e.preventDefault();
-  feedback.textContent = "";
-  feedback.className = "";
-
-  const err = validateFiles();
-  if(err){
-    feedback.textContent = err;
-    feedback.className = "error";
-    return;
-  }
-
-  submitBtn.disabled = true;
-  submitBtn.textContent = "Submitting...";
-
-  const formData = new FormData(form);
-
-  // If Formspree endpoint provided and not on Netlify, POST to Formspree
-  const isNetlify = form.hasAttribute('data-netlify');
-  if(!isNetlify && FORMSPREE_ENDPOINT){
-    try{
-      const resp = await fetch(FORMSPREE_ENDPOINT, {method:'POST', body:formData});
-      if(resp.ok){
-        feedback.textContent = "Application submitted — we will contact you within 24 hours.";
-        feedback.className = "success";
-        form.reset();
-      } else {
-        const text = await resp.text();
-        feedback.textContent = "Submission failed: " + (text || resp.statusText);
-        feedback.className = "error";
-      }
-    } catch(err){
-      feedback.textContent = "Submission failed: " + err.message;
-      feedback.className = "error";
-    } finally {
-      submitBtn.disabled = false;
-      submitBtn.textContent = "Submit Application";
-    }
-    return;
-  }
-
-  // If Netlify (or fallback), attempt to submit via fetch to current page (Netlify will intercept).
-  try {
-    const action = form.getAttribute('action') || window.location.href;
-    const resp = await fetch(action, { method: 'POST', body: formData });
-    if(resp.ok || resp.status === 200 || resp.type === 'opaqueredirect'){
-      feedback.textContent = "Application submitted — we will contact you within 24 hours.";
-      feedback.className = "success";
-      form.reset();
-    } else {
-      // Netlify sometimes returns a redirect; treat 200-299 as success
-      if(resp.status >= 200 && resp.status < 300){
-        feedback.textContent = "Application submitted — we will contact you within 24 hours.";
-        feedback.className = "success";
-        form.reset();
-      } else {
-        feedback.textContent = "Submission failed. If you're not hosted on Netlify, set up Formspree and paste your endpoint into the script.";
-        feedback.className = "error";
-      }
-    }
-  } catch(err){
-    feedback.textContent = "Submission error: " + err.message;
-    feedback.className = "error";
-  } finally {
-    submitBtn.disabled = false;
-    submitBtn.textContent = "Submit Application";
-  }
-});
-
-clearBtn.addEventListener('click', function(){
-  form.reset();
-  feedback.textContent = "";
-  feedback.className = "";
+  <footer>
+    <p>&copy; 2025 ROTONDIWA CASH LOANS. All rights reserved.</p>
+  </footer>
+</body>
+</html>
